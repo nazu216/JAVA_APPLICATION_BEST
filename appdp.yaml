@@ -2,17 +2,17 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: web-server2
+  name: web-server3
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: web-server2
+      app: web-server3
   template:
     metadata:
       labels:
-        app: web-server2
+        app: web-server3
     spec:
       containers:
         - name: web-server-con
-          image: 110658654418.dkr.ecr.ap-northeast-1.amazonaws.com/myecr:latest
+          image: 526174677628.dkr.ecr.ap-northeast-1.amazonaws.com/ripecr:latest
