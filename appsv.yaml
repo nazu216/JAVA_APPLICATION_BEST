@@ -2,10 +2,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: web-server2-sv-lb
+  name: web-server3-sv-lb
 spec:
   selector:
-    app: web-server2
+    app: web-server3
   type: LoadBalancer
   ports:
     - name: java-app
